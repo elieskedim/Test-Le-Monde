@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "TheAntiquaB";
+  src: url(‘src/fonts/TheAntiquaB.woff2’) format(‘woff2’);
+}
+@font-face {
+  font-family: "MarrSans-Semibold-Web";
+  src: url(‘src/fonts/MarrSans-Semibold-Web.woff2’) format(‘woff2’);
+}
+body {
+  font-family: sans-serif;
+}
+.main {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border-top: 2px solid black;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-container h1 {
+  font-family: TheAntiquaB;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.title-container button {
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+section .vignettes-blocks {
+  display: flex;
+  margin-top: 20px;
+}
+section .vignettes-blocks p {
+  font-family: MarrSans-Semibold-Web;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section .hide-mobile {
+  display: none;
+}
+.hide {
+  display: none;
+}
+#more {
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .main {
+    max-width: 664px;
+  }
+  .carousel__container {
+    width: 680px;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1000px;
+    overflow: hidden;
+    border: none;
+  }
+  .title-container {
+    display: flex;
+  }
+  .carousel__btn {
+    display: flex;
+  }
+  .title-container button,
+  button#more {
+    display: none;
+  }
+  section .hide-mobile {
+    display: flex;
+  }
+  section .vignettes-blocks {
+    height: 100px;
+  }
+  section .carousel__item {
+    width: 265px;
+  }
+  section .vignettes-blocks p {
+    font-size: 1rem;
+  }
+  section .vignettes-blocks p {
+    font-size: 0.8rem;
+  }
+  section .vignettes-blocks img {
+    height: 100%;
+  }
+
+  /**
+      CAROUSEL
+    */
+  .carousel {
+    position: relative;
+  }
+  .carousel__container {
+    transition: transform 0.3s;
+    width: 500%;
+  }
+  .carousel__container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .carousel__item {
+    float: left;
+  }
+  .carousel__next,
+  .carousel__prev {
+    width: 30px;
+    height: 30px;
+    background: #fff url("src/img/arrow.svg") center center no-repeat;
+    background-size: 10px;
+    background-color: silver;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .carousel__prev {
+    transform: rotate(180deg);
+    margin-right: 20px;
+  }
+  .disabled {
+    background-color: #fff;
+    border: 1px solid silver;
+    pointer-events: none;
+  }
+}
