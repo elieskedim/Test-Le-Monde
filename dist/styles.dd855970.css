@@ -1,10 +1,10 @@
 @font-face {
   font-family: "TheAntiquaB";
-  src: url(‘fonts/TheAntiquaB.woff2’) format(‘woff2’);
+  src: url(/2793014585743a57ef675b9dc594b149.woff2’) format(‘woff2’);
 }
 @font-face {
   font-family: "MarrSans-Semibold-Web";
-  src: url(‘fonts/MarrSans-Semibold-Web.woff2’) format(‘woff2’);
+  src: url(/78064c9821757cdac66756ab55d84493.woff2’) format(‘woff2’);
 }
 body {
   font-family: sans-serif;
@@ -123,7 +123,7 @@ section .hide-mobile {
   .carousel__prev {
     width: 30px;
     height: 30px;
-    background: #fff url("src/img/arrow.svg") center center no-repeat;
+    background: #fff url("/8b613c6701b3a5d54dc820e42dcde662.svg") center center no-repeat;
     background-size: 10px;
     background-color: silver;
     border-radius: 50%;
@@ -139,3 +139,6 @@ section .hide-mobile {
     pointer-events: none;
   }
 }
+
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
